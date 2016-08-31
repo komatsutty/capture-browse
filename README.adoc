@@ -1,0 +1,47 @@
+= Capture Browse
+
+capture-browse is wrapper for Selenium and Xvfb
+
+
+== Requirements
+
+* Python 3.5 or later
+* X virtual framebuffer
+
+=== Require Python Library
+
+* Pillow
+* pyscreenshot
+* selenium
+* xvfbwrapper
+
+
+== Installation
+
+In Debian, you can install Xvfb.
+
+[source]
+----
+$ sudo apt-get install xvfb
+----
+
+Install Python 3 and pyenv, if you need.
+
+----
+$ sudo apt-get install libbz2-dev libsqlite3-dev libreadline-dev
+$ git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+$ {
+    echo 'export PYENV_ROOT=${HOME}/.pyenv'
+    echo 'export PATH=${PYENV_ROOT}/bin:${PATH}'
+    echo 'eval "$(pyenv init -)"'
+} >> ~/.bash_profile
+$ source ~/.bash_profile
+$ pyenv install 3.5.2
+----
+
+After clone repository and change directory, run following command.
+
+[source]
+----
+$ pip install -r requirements.txt
+----
